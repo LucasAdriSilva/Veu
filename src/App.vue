@@ -1,21 +1,23 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import Style from "./assets/css.vue";
-
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
+  <div id="pag-estac">
+    <sidebar>
       <h1>BodyWayAcademy</h1>
 
-      <nav>
+      <nav class="menu-left">
         <RouterLink to="/home">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/teste">Teste</RouterLink>
       </nav>
-    </div>
-  </header>
+    </sidebar>
 
-  <RouterView />
+    <section id="pag-dinam">
+      <header>text</header>
+      <RouterView />
+    </section>
+  </div>
 </template>
